@@ -80,7 +80,7 @@ const Clima = () => {
                         fecha={formatearFecha(weatherData.current_weather.time.substring(0, 10))}
                         data={weatherData.current_weather.temperature}
                         data2={weatherData.current_weather_units.temperature}
-                        data4={10}
+                        data4={weatherData.current_weather.temperature+1}
                         data3={traduccionClima[weatherCode]?.name} /* aqui quiero que vaya el name */
                         icono={traduccionClima[weatherCode]?.image_src}  /* aqui quiero que vaya el image_src */
                         factor={weatherData.current_weather.temperature * 2.5}
